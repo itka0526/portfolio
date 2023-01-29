@@ -48,6 +48,13 @@ body {
     opacity: 0;
     animation: fade-in-animation 300ms ease 1.6s forwards;
 }
+.custom-hover > svg {
+    transition: transform 200ms ease-in-out;
+}
+
+.custom-hover:hover > svg {
+    transform: translateY(-4px);
+}
 
 @keyframes top-to-bottom-section-animation {
     to {
@@ -78,6 +85,12 @@ body {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .greeting-text {
+        font-size: 4.5rem;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .greeting-text {
         font-size: 3.5rem;
@@ -87,5 +100,6 @@ body {
 @media screen and (max-width: 479px) {
     .greeting-text {
         font-size: 1.5rem;
+        line-height: 1.25;
     }
 }

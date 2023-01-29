@@ -6,7 +6,7 @@ import { scrollToId } from "./hooks/scrollToId";
 export function Greeting() {
     return (
         <RightToLeftSection>
-            <div id="greeting" className="grid grid-cols-[45%,55%] gap-4">
+            <div id="greeting" className="grid md:grid-cols-[45%,55%] gap-4">
                 <div className="flex flex-col justify-evenly">
                     <h1 className="greeting-text">
                         Привет,
@@ -20,7 +20,7 @@ export function Greeting() {
                         className="flex items-center md:hover:-translate-y-1 duration-200 transition-transform hover:cursor-pointer"
                         onClick={() => scrollToId("skill")}
                     >
-                        <span className="text-2xl underline underline-offset-[6px]">Дальше читать</span>
+                        <span className="text-xl md:text-2xl underline underline-offset-[6px]">Дальше читать</span>
                         <CornerDownLeft className="scale-105 mx-1 mt-1" />
                     </div>
                 </div>

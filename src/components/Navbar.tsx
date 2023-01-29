@@ -17,7 +17,7 @@ export function Navbar({ scrollTo }: { scrollTo: React.RefObject<HTMLElement> })
 const LeftSide = ({ scrollTo }: { scrollTo: React.RefObject<HTMLElement> }) => {
     return (
         <div onClick={() => scrollToRef(scrollTo)} className="hover:cursor-pointer">
-            <span className="font-extrabold text-2xl ">IP</span>
+            <span className="font-extrabold text-2xl ">Itgelt Developer</span>
         </div>
     );
 };
