@@ -26,7 +26,7 @@ export function Skills() {
                     <li className="italic">Golang</li>
                     <li className="italic">SQL</li>
                 </ul>
-                Половину из них я выучил сам, а половина - из моего университета.
+                Половину из них я выучил сам, а половину из университета.
             </>
         );
     return (
