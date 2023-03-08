@@ -6,15 +6,15 @@ export function Projects() {
     return (
         <div id="projects" className="w-full flex flex-col ">
             <ScrollableRow>
-                <Project imgSrc="/chat-app-ss.webp">
+                <Project imgSrc="/portfolio/chat-app-ss.webp">
                     <Links
                         links={["https://chat-with-me-i54t.onrender.com/", "https://github.com/itka0526/chat-app", "https://youtu.be/MImD-nzYmy0"]}
                     />
                 </Project>
-                <Project imgSrc="/mirea-schedule-ss.webp">
+                <Project imgSrc="/portfolio/mirea-schedule-ss.webp">
                     <Links links={["http://mirea-schedule.vercel.app/", "https://github.com/itka0526/mirea-schedule"]} />
                 </Project>
-                <Project imgSrc="/file-sharing-ss.webp">
+                <Project imgSrc="/portfolio/file-sharing-ss.webp">
                     <Links
                         links={[
                             "https://file-sharing-tool.onrender.com/",
@@ -34,7 +34,7 @@ function Links({ links }: { links: string[] }) {
             {links.map((link, idx) => {
                 return (
                     <div key={link} className="h-full w-full flex justify-center items-center">
-                        <a href={"/portfolio" + link} className="">
+                        <a href={link} className="">
                             {idx === 0 ? (
                                 <ExternalLink className="w-9 h-9" />
                             ) : idx === 1 ? (
