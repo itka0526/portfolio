@@ -34,7 +34,7 @@ function Links({ links }: { links: string[] }) {
             {links.map((link, idx) => {
                 return (
                     <div key={link} className="h-full w-full flex justify-center items-center">
-                        <a href={"/portfolio/" + link} className="">
+                        <a href={"/portfolio" + link} className="">
                             {idx === 0 ? (
                                 <ExternalLink className="w-9 h-9" />
                             ) : idx === 1 ? (
