@@ -56,6 +56,34 @@ body {
     transform: translateY(-4px);
 }
 
+.scrollable-row > div:first-child {
+    margin-left: 1.25rem;
+}
+
+.scrollable-row > div:last-child {
+    margin-right: 1.25rem;
+}
+
+.custom-shadow {
+    box-shadow: 0 0 20px rgb(0 0 0 / 0.125);
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.invisible-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.glass-bg {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
 @keyframes top-to-bottom-section-animation {
     to {
         transform: translateY(0);
@@ -94,6 +122,10 @@ body {
 @media screen and (max-width: 767px) {
     .greeting-text {
         font-size: 3.5rem;
+    }
+
+    .scrollable-row > div:first-child {
+        margin-left: 0rem;
     }
 }
 

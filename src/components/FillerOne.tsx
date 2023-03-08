@@ -2,7 +2,7 @@ import sample from "../assets/sample.png";
 
 export function FillerOne() {
     return (
-        <div>
+        <div className="">
             <img src={sample} draggable={false} />
         </div>
     );

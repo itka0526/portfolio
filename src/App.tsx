@@ -1,11 +1,12 @@
 import { Navbar } from "./components/Navbar";
 import { useRef } from "react";
-import { Section } from "./components/Section";
+import { FullSection, Section } from "./components/Section";
 import { Greeting } from "./components/Greeting";
 import { SectionBreakText } from "./components/SectionBreakText";
 import { SectionBreak } from "./components/SectionBreak";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
+import { Projects } from "./components/Projects";
 
 function App() {
     const mainRef = useRef<HTMLElement>(null);
@@ -22,6 +23,12 @@ function App() {
             <Section>
                 <Skills />
             </Section>
+            <SectionBreak>
+                <SectionBreakText text="Проекты" scrollToIdName="projects" />
+            </SectionBreak>
+            <FullSection>
+                <Projects />
+            </FullSection>
             <SectionBreak>
                 <SectionBreakText text="Контакты" scrollToIdName="contacts" />
             </SectionBreak>
